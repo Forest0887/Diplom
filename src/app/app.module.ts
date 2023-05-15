@@ -3,13 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {ProductComponent} from "./components/product/product.component";
 import {NgOptimizedImage} from "@angular/common";
+import { AuthRegComponent } from './components/auth-reg/auth-reg.component';
+import { HomeComponent } from './components/home/home.component';
+import { RegPageComponent } from './components/reg-page/reg-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    AuthRegComponent,
+    HomeComponent,
+    RegPageComponent
   ],
   imports: [
     BrowserModule,
