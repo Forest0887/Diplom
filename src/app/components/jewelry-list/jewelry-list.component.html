@@ -1,0 +1,31 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Название</th>
+        <th scope="col">Артикул</th>
+        <th scope="col">Описание</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Категория</th>
+        <th scope="col">Количество</th>
+        <th scope="col">Изображение</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let jewelry of jewelryList">
+        <td>{{ jewelry.id }}</td>
+        <td>{{ jewelry.name }}</td>
+        <td>{{ jewelry.name_id }}</td>
+        <td>{{ jewelry.description }}</td>
+        <td>{{ jewelry.price }}</td>
+        <td>{{ jewelry.category }}</td>
+        <td>{{ jewelry.amount }}</td>
+<!--        <td> <img ngSrc="{{ jewelry.pathToPic }}" alt="{{ jewelry.pathToPic }}" height="500" width="450"></td>-->
+        <td> <img src="{{ jewelry.pathToPic }}" alt="{{ jewelry.pathToPic }}" height="500" width="450"></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

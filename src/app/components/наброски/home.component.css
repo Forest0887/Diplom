@@ -55,7 +55,7 @@ h1 {
 }
 
 h2, h3 {
-  margin: 40px;
+  margin: 10px;
   text-align: center;
 }
 
@@ -118,5 +118,20 @@ footer {
   padding: 20px;
   color: #fff;
   text-align: center;
+  /*margin-top: ;*/
 }
 
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #888888; /* Green */
+  border-radius: 12px;
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+button:hover {
+  background-color: #313131; /* Green */
+  color: white;
+
+}

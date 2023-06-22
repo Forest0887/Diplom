@@ -1,0 +1,63 @@
+<div class="card my-5">
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="form-group">
+
+        <label for="name">Название изделия</label>
+        <input type="text" [(ngModel)]="jewelry.name"
+               class="form-control"
+               id="name"
+               name="name"
+               placeholder="Введите название"
+               required #name="ngModel">
+        <br>
+        <label for="name_id">Артикул изделия</label>
+        <input type="text" [(ngModel)]="jewelry.name_id"
+               class="form-control"
+               id="name_id"
+               name="name_id"
+               placeholder="Введите артикул"
+               required #name="ngModel">
+        <br>
+        <label for="description">Описание изделия</label>
+        <input type="text" [(ngModel)]="jewelry.description"
+               class="form-control"
+               id="description"
+               name="description"
+               placeholder="Введите описание"
+               required #name="ngModel">
+        <br>
+        <label for="price">Цена</label>
+        <input type="text" [(ngModel)]="jewelry.price"
+               class="form-control"
+               id="price"
+               name="price"
+               placeholder="Введите цену (число) "
+               required #name="ngModel">
+        <br>
+        <label for="category">Категория</label>
+        <input type="text" [(ngModel)]="jewelry.category"
+               class="form-control"
+               id="category"
+               name="category"
+               placeholder="Введите категорию"
+               required #name="ngModel">
+        <br>
+        <label for="amount">Количество</label>
+        <input type="text" [(ngModel)]="jewelry.amount"
+               class="form-control"
+               id="amount"
+               name="amount"
+               placeholder="Введите Количество (число) "
+               required #name="ngModel">
+
+        <!-- ниже блок кода для загрузки картинки -->
+        <br>
+        <input type="file" (change)="uploadPicture($event)">
+        <br>
+        <br>
+      </div>
+      <button type="submit" [disabled]="!userForm.form.valid" id="submit">Submit</button>
+    </form>
+  </div>
+</div>

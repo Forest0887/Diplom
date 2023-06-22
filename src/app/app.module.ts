@@ -5,22 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgOptimizedImage} from "@angular/common";
 import { AuthRegComponent } from './components/auth-reg/auth-reg.component';
-import { HomeComponent } from './components/home/home.component';
 import { RegPageComponent } from './components/reg-page/reg-page.component';
+import { JewelryListComponent } from './components/jewelry-list/jewelry-list.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { JewelryService } from './components/service/jewelry.service';
+import { JewelryFormComponent } from './components/jewelry-form/jewelry-form.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthRegComponent,
-    HomeComponent,
-    RegPageComponent
+    RegPageComponent,
+    JewelryListComponent,
+    JewelryFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [JewelryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
