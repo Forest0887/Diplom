@@ -1,5 +1,5 @@
 export class Jewelry {
-  id : number | undefined;
+  id : number = 0;
   name: string | undefined;
   name_id: string | undefined;
   description: string | undefined;

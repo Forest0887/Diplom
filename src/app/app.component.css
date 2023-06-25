@@ -55,7 +55,7 @@ h1 {
 }
 
 h2, h3 {
-  margin: 40px;
+  margin: 10px;
   text-align: center;
 }
 
@@ -74,7 +74,7 @@ img {
 
 /* Main content styles */
 main {
-  padding-top: 80px;
+  padding-top: 5%;
 }
 
 section {
@@ -118,5 +118,6 @@ footer {
   padding: 20px;
   color: #fff;
   text-align: center;
+  flex: 0 0 auto;
 }
 

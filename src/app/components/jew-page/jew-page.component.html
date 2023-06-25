@@ -1,0 +1,18 @@
+<!--    <table class="table table-bordered table-striped align-middle">-->
+<!--      <tbody>-->
+      <div class="align-middle" *ngIf="jewelry">
+        <div class="align-middle">
+          <tr class="text-center"> {{ jewelry.name }}</tr>
+          <tr> <img src="{{ jewelry.pathToPic }}" alt="Pictures not found" height="500" width="450"></tr>
+          <tr class="text-center">Описание: {{ jewelry.description }}</tr>
+          <tr class="text-center">Цена: {{ jewelry.price }} р.</tr>
+          <tr class="text-center">Количество в наличии: {{ jewelry.amount }}</tr>
+        </div>
+        <button style="margin-left: 30%" class="btn btn-success">Купить </button>
+        <button style="margin-left: 1%" class="btn btn-success">Забронировать </button>
+        <br>
+        <button (click)="deleteJew(jewelry.id)" style="margin-left: 30%; margin-top: 1%" class="btn btn-danger">Удалить</button>
+        <button style="margin-left: 1%; margin-top: 1%" class="btn btn-warning">Изменить</button>
+      </div>
+<!--      </tbody>-->
+<!--    </table>-->

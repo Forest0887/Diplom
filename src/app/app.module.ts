@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { JewelryService } from './components/service/jewelry.service';
 import { JewelryFormComponent } from './components/jewelry-form/jewelry-form.component';
+import { JewPageComponent } from './components/jew-page/jew-page.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { JewelryFormComponent } from './components/jewelry-form/jewelry-form.com
     AuthRegComponent,
     RegPageComponent,
     JewelryListComponent,
-    JewelryFormComponent
+    JewelryFormComponent,
+    JewPageComponent
   ],
   imports: [
     BrowserModule,

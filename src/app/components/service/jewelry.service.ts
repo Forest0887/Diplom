@@ -16,15 +16,15 @@ export class JewelryService {
     return this.http.get<Jewelry[]>(this.jewelryUrl + "/show-list");
   }
 
-  // public save(jewelry: Jewelry) {
-  //   return this.http.post<Jewelry>(this.jewelryUrl, jewelry);
-  // }
-
   public save(data : any) {
     return this.http.post<any>(this.jewelryUrl  + "/add", data);
   }
 
-  // public upload(data : any): Observable<any> {
-  //   return this.http.post<any>(this.jewelryUrl, data);
-  // }
+  public getJewelryById(id: number): Observable<any> {
+    return this.http.get(`${this.jewelryUrl}/${id}`);
+  }
+
+  public deleteJewelryById(id : number): Observable<any> {
+    return this.http.delete(`${this.jewelryUrl}/${id}`, { responseType: 'text'});
+  }
 }
